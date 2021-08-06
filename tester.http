@@ -1,0 +1,47 @@
+GET /users HTTP/2
+Accept: application/json
+host: localhost:8080
+
+###
+
+POST /users HTTP/2
+host: localhost:8080
+content-type: application/json
+Accept: text/html,application/xhtml+xml,application/xml
+Accept-Language: de-de,de:q=0.9,en-us:q=0.5,en:q=0.3
+Accept-Encoding: gzip,deflate
+Keep-Alive: 200
+Connection: keep-alive
+
+{"vorname": "Manuel",
+  "nachname":"nachname",
+  "email":"email",
+  "password":"password"}
+
+
+
+###
+DELETE /users/email HTTP/2
+Accept: application/json
+Content-Type: application/json
+host: localhost:8080
+
+###
+
+
+PUT /users/muller@gmail.com HTTP/2
+host: localhost:8080
+content-type: application/json
+Accept: text/html,application/xhtml+xml,application/xml
+Accept-Language: de-de,de:q=0.9,en-us:q=0.5,en:q=0.3
+Accept-Encoding: gzip,deflate
+Keep-Alive: 200
+Connection: keep-alive
+
+{"vorname": "abc",
+"nachname":"dsad",
+"apassword":"23",
+  "npassword1":"45",
+  "npassword2":"45"}
+
+

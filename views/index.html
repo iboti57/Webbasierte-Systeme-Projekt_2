@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Userman</title>
+    <script src="/res/scripts/script.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<h1>User Manager</h1>
+<button type="button" id="get-button">Read</button>
+
+<form action="" id="create-user">
+    <input type="text" name="vorname" id="vnam">
+    <input type="text" name="nachname">
+    <input type="email" name="email">
+    <input type="password" name="password">
+    <input type="submit" value="CREATE">
+
+</form>
+
+<hr>
+<table class="tabo" id="table">
+    <thead>
+    <tr>
+        <th>Vorname</th>
+        <th>Nachname</th>
+        <th>E-Mail</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+
+    <tbody id="tBody">
+    </tbody>
+
+
+</table>
+
+<p id="out"></p>
+
+</body>
+</html>

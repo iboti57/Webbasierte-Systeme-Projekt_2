@@ -1,0 +1,46 @@
+POST /users HTTP/2
+host: localhost:8080
+content-type: application/json
+Accept: text/html,application/xhtml+xml,application/xml
+Accept-Language: de-de,de:q=0.9,en-us:q=0.5,en:q=0.3
+Accept-Encoding: gzip,deflate
+Keep-Alive: 200
+Connection: keep-alive
+
+{"vorname":"",
+  "nachname":"",
+  "email":"",
+  "password":""}
+
+###
+GET /user HTTP/2
+Accept: application/json
+host: localhost:8080
+
+###
+DELETE /userss/ssss HTTP/2
+Accept: application/json
+Content-Type: application/json
+host: localhost:8080
+
+###
+
+
+PUT /users/altay@gmail.com HTTP/2
+host: localhost:8080
+content-type: application/json
+Accept: text/html,application/xhtml+xml,application/xml
+Accept-Language: de-de,de:q=0.9,en-us:q=0.5,en:q=0.3
+Accept-Encoding: gzip,deflate
+Keep-Alive: 200
+Connection: keep-alive
+
+{"vorname": "Philip",
+  "nachname":"Christian",
+  "apassword":"0000",
+  "npassword1":"23",
+  "npassword2":"43"}
+
+
+
+
